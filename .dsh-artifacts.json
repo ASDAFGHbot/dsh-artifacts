@@ -61,6 +61,18 @@
       ],
       "description": "laputa-home 分区（DeepSeek v4.1 轮）TC-042 完整回放：逐步截图、定位过程、模型输出"
     },
+    "laputa-home-ds-replay-tc049": {
+      "id": "laputa-home-ds-replay-tc049",
+      "title": "DeepSeek 轮回放 TC-049 · 右侧辅助入口",
+      "kind": "html",
+      "createdAt": "2026-11-20T03:32:14.175Z",
+      "updatedAt": "2026-11-20T03:32:14.175Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区（DeepSeek v4.1 轮）TC-049 完整回放：逐步截图、定位过程、模型输出"
+    },
     "laputa-home-midscene-ozqiob": {
       "id": "laputa-home-midscene-ozqiob",
       "title": "laputa-home 分区 Midscene 执行报告",
