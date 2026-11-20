@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "artifacts": {
+    "laputa-home-2026-11-19-lhfv7l": {
+      "id": "laputa-home-2026-11-19-lhfv7l",
+      "title": "laputa-home 分区视觉回归总结（2026-11-19）",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:42:54.274Z",
+      "updatedAt": "2026-11-20T02:42:54.274Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 首页核心回归·分区章节 5 条用例视觉回归总结（qwen3.8-flash 轮）：结果汇总、30 条断言明细与 23 张截图、跳转校验、模型对照、改进建议"
+    }
+  },
+  "tombstones": []
+}
