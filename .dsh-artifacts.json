@@ -37,6 +37,18 @@
       ],
       "description": "laputa-home 分区视觉回归总结（DeepSeek v4.1 轮，登录态 mid 14135892）：结果、断言明细与截图、跳转校验、两轮对照，附 5 条在线回放"
     },
+    "laputa-home-dingdao-report": {
+      "id": "laputa-home-dingdao-report",
+      "title": "laputa-home 顶导执行报告（qwen3.8-flash）",
+      "kind": "html",
+      "createdAt": "2026-11-20T06:29:38.277Z",
+      "updatedAt": "2026-11-20T06:29:38.277Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 顶导章节 Midscene 执行报告（qwen3.8-flash，登录态 mid 14135892）：结果表、逐条断言明细与截图"
+    },
     "laputa-home-dingdao-summary": {
       "id": "laputa-home-dingdao-summary",
       "title": "laputa-home 顶导视觉回归总结（qwen3.8-flash）",
