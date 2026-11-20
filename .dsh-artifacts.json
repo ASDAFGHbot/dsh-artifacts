@@ -37,6 +37,18 @@
       ],
       "description": "laputa-home 分区视觉回归总结（DeepSeek v4.1 轮，登录态 mid 14135892）：5 条用例结果、30 条断言明细与截图、跳转校验、两轮模型对照"
     },
+    "laputa-home-ds-replay-tc004": {
+      "id": "laputa-home-ds-replay-tc004",
+      "title": "DeepSeek 轮回放 TC-004 · 动态/热门",
+      "kind": "html",
+      "createdAt": "2026-11-20T03:31:55.439Z",
+      "updatedAt": "2026-11-20T03:31:55.439Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区（DeepSeek v4.1 轮）TC-004 完整回放：逐步截图、定位过程、模型输出"
+    },
     "laputa-home-midscene-ozqiob": {
       "id": "laputa-home-midscene-ozqiob",
       "title": "laputa-home 分区 Midscene 执行报告",
