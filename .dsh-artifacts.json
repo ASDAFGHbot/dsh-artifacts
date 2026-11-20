@@ -77,6 +77,18 @@
         "index.html"
       ],
       "description": "laputa-home 分区 TC-042（B42 一级分区/子分区/更多）Midscene 完整回放：逐步截图、定位过程、模型输出"
+    },
+    "laputa-home-replay-tc049": {
+      "id": "laputa-home-replay-tc049",
+      "title": "分区回放 TC-049 · 右侧辅助入口",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:58:34.823Z",
+      "updatedAt": "2026-11-20T02:58:34.823Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区 TC-049（B49 分区栏右侧辅助入口）Midscene 完整回放：逐步截图、定位过程、模型输出"
     }
   },
   "tombstones": []
