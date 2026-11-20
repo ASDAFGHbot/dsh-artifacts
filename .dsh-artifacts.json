@@ -18,12 +18,12 @@
       "title": "laputa-home 分区执行报告（DeepSeek v4.1）",
       "kind": "html",
       "createdAt": "2026-11-20T03:31:41.328Z",
-      "updatedAt": "2026-11-20T03:31:41.328Z",
-      "rev": 1,
+      "updatedAt": "2026-11-20T03:33:01.675Z",
+      "rev": 2,
       "files": [
         "index.html"
       ],
-      "description": "laputa-home 分区 Midscene 执行报告（DeepSeek v4.1 轮，登录态）：结果表、断言明细与截图"
+      "description": "laputa-home 分区 Midscene 执行报告（DeepSeek v4.1 轮，登录态）：结果表、断言明细与截图，每条用例附在线回放链接"
     },
     "laputa-home-deepseek-summary": {
       "id": "laputa-home-deepseek-summary",
