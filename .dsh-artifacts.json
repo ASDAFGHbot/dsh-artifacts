@@ -101,6 +101,18 @@
         "index.html"
       ],
       "description": "laputa-home 分区 TC-101（H01 吸顶导航出现与恢复）Midscene 完整回放：逐步截图、定位过程、模型输出"
+    },
+    "laputa-home-replay-tc102": {
+      "id": "laputa-home-replay-tc102",
+      "title": "分区回放 TC-102 · 吸顶栏 hover 与更多",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:59:24.424Z",
+      "updatedAt": "2026-11-20T02:59:24.424Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区 TC-102（H02 吸顶导航 hover/更多/跳转）Midscene 完整回放：逐步截图、定位过程、模型输出"
     }
   },
   "tombstones": []
