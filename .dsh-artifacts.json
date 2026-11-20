@@ -12,6 +12,18 @@
         "index.html"
       ],
       "description": "laputa-home 首页核心回归·分区章节 5 条用例视觉回归总结（qwen3.8-flash 轮）：结果汇总、30 条断言明细与 23 张截图、跳转校验、模型对照、改进建议"
+    },
+    "laputa-home-midscene-ozqiob": {
+      "id": "laputa-home-midscene-ozqiob",
+      "title": "laputa-home 分区 Midscene 执行报告",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:43:11.457Z",
+      "updatedAt": "2026-11-20T02:43:11.457Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区 5 条用例的 Midscene 执行报告：结果表、每条用例展开后的执行步骤与断言截图（完整回放文件较大未随页发布）"
     }
   },
   "tombstones": []
