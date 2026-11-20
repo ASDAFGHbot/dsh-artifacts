@@ -65,6 +65,18 @@
         "index.html"
       ],
       "description": "laputa-home 分区 TC-004（B04 分区栏左侧动态/热门）Midscene 完整回放：逐步截图、定位过程、模型输出"
+    },
+    "laputa-home-replay-tc042": {
+      "id": "laputa-home-replay-tc042",
+      "title": "分区回放 TC-042 · 一级分区与更多",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:58:23.150Z",
+      "updatedAt": "2026-11-20T02:58:23.150Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区 TC-042（B42 一级分区/子分区/更多）Midscene 完整回放：逐步截图、定位过程、模型输出"
     }
   },
   "tombstones": []
