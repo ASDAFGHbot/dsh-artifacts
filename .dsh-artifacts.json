@@ -53,6 +53,18 @@
         "index.html"
       ],
       "description": "laputa-home 分区 5 条用例的 Midscene 执行报告：结果表、每条用例展开后的执行步骤与断言截图（点击图片可看原图）"
+    },
+    "laputa-home-replay-tc004": {
+      "id": "laputa-home-replay-tc004",
+      "title": "分区回放 TC-004 · 动态/热门",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:57:03.835Z",
+      "updatedAt": "2026-11-20T02:57:03.835Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区 TC-004（B04 分区栏左侧动态/热门）Midscene 完整回放：逐步截图、定位过程、模型输出"
     }
   },
   "tombstones": []
