@@ -30,12 +30,12 @@
       "title": "laputa-home 分区视觉回归总结（DeepSeek v4.1）",
       "kind": "html",
       "createdAt": "2026-11-20T03:31:33.414Z",
-      "updatedAt": "2026-11-20T03:31:33.414Z",
-      "rev": 1,
+      "updatedAt": "2026-11-20T03:32:53.668Z",
+      "rev": 2,
       "files": [
         "index.html"
       ],
-      "description": "laputa-home 分区视觉回归总结（DeepSeek v4.1 轮，登录态 mid 14135892）：5 条用例结果、30 条断言明细与截图、跳转校验、两轮模型对照"
+      "description": "laputa-home 分区视觉回归总结（DeepSeek v4.1 轮，登录态 mid 14135892）：结果、断言明细与截图、跳转校验、两轮对照，附 5 条在线回放"
     },
     "laputa-home-ds-replay-tc004": {
       "id": "laputa-home-ds-replay-tc004",
