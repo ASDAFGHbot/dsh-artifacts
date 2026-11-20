@@ -89,6 +89,18 @@
         "index.html"
       ],
       "description": "laputa-home 分区 TC-049（B49 分区栏右侧辅助入口）Midscene 完整回放：逐步截图、定位过程、模型输出"
+    },
+    "laputa-home-replay-tc101": {
+      "id": "laputa-home-replay-tc101",
+      "title": "分区回放 TC-101 · 吸顶导航",
+      "kind": "html",
+      "createdAt": "2026-11-20T02:59:13.394Z",
+      "updatedAt": "2026-11-20T02:59:13.394Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 分区 TC-101（H01 吸顶导航出现与恢复）Midscene 完整回放：逐步截图、定位过程、模型输出"
     }
   },
   "tombstones": []
