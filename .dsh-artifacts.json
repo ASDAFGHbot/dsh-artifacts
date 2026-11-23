@@ -13,6 +13,18 @@
       ],
       "description": "banner TC-001 回放（qwen3.8-flash，登录态 mid 14135892）：轮播图片、标题对应与导航控件"
     },
+    "bn-replay-tc002": {
+      "id": "bn-replay-tc002",
+      "title": "banner 回放 TC-002",
+      "kind": "html",
+      "createdAt": "2026-11-23T03:28:37.091Z",
+      "updatedAt": "2026-11-23T03:28:37.091Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "banner TC-002 回放（qwen3.8-flash，登录态）：轮播自动播放与内容同步"
+    },
     "dd-replay-tc001": {
       "id": "dd-replay-tc001",
       "title": "顶导回放 TC-001",
