@@ -49,6 +49,7 @@ tr.detail-row .detail{padding:12px 14px;background:var(--card);border:1px solid 
 .detail-meta a{color:#0969da}
 .detail-meta .gap{color:var(--warn)}
 .errbox{background:#fff8f8;border:1px solid #f3d7da;border-radius:8px;padding:9px 12px;margin:8px 0}
+.notebox{background:#f6f8fa;border:1px solid var(--line);border-left:3px solid #9aa4ae;border-radius:6px;padding:8px 12px;margin:8px 0;color:#3c444d;font-size:13px}
 .err-h{display:flex;gap:10px;align-items:center;font-size:13px;margin-bottom:4px}
 .err-body{font-size:13px;word-break:break-word}
 .block{margin:12px 0}
@@ -88,27 +89,25 @@ figure.shot figcaption{font-size:11px;color:var(--muted);margin-top:2px}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:8px 0 30px}
 
 .cfile{color:#5b6570}
-#lb{position:fixed;inset:0;background:rgba(12,14,18,.92);display:none;align-items:center;justify-content:center;
-z-index:9999;cursor:zoom-out;padding:20px}
-#lb.on{display:flex}
-#lb img{max-width:96vw;max-height:92vh;border-radius:8px;box-shadow:0 12px 48px rgba(0,0,0,.5);border:none;margin:0}
+#lb{position:fixed;inset:0;background:rgba(12,14,18,.92);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}
+#lb.on{display:flex}#lb img{max-width:96vw;max-height:92vh;border-radius:8px;border:none;margin:0}
 #lb .hint{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);color:#cfd6dd;font-size:12px}
-.zoom img{cursor:zoom-in}
-
+.zoom img{cursor:zoom-in}img{cursor:zoom-in}
+.notebox{background:#f6f8fa;border:1px solid #e4e7eb;border-left:3px solid #9aa4ae;border-radius:6px;padding:8px 12px;margin:8px 0;color:#3c444d;font-size:13px}
 </style></head>
 <body>
 <header>
   <h1>laputa-home banner 视觉回归（qwen3.8-flash）</h1>
   <div class="hline"></div>
   <div class="meta">运行 20261123-1130 · 环境 prod · 开始 2026-11-23 11:24:16 · 耗时 2m 58s（用例累计） · 执行窗口 2m 42s · Midscene 回放 4/4 条</div>
-  <div class="kpis"><div class="kpi"><b>4</b><span>用例总数</span></div><div class="kpi ok"><b>3</b><span>通过</span></div><div class="kpi bad"><b>1</b><span>失败</span></div><div class="kpi bad"><b>75%</b><span>通过率</span></div><div class="kpi"><b>4</b><span>已执行</span></div><div class="kpi muted"><b>0</b><span>未执行 / 跳过</span></div><div class="kpi plat"><b>0</b><span>环境异常</span></div></div>
+  <div class="kpis"><div class="kpi"><b>5</b><span>用例总数</span></div><div class="kpi ok"><b>3</b><span>通过</span></div><div class="kpi bad"><b>1</b><span>失败</span></div><div class="kpi bad"><b>75%</b><span>通过率</span></div><div class="kpi"><b>4</b><span>已执行</span></div><div class="kpi muted"><b>1</b><span>未执行 / 跳过</span></div><div class="kpi plat"><b>0</b><span>环境异常</span></div></div>
 </header>
 <main>
 <section id="failures"><h2>失败摘要（1）<span class="muted">点击打开对应用例明细</span></h2><div class="faillist"><a class="fail-item bad" href="#d-TC-004" data-open-case="TC-004">
     <span class="badge bad">❌ 产品缺陷</span><b>TC-004</b>
     <span class="fname">C05 轮播标题与图片区域跳转</span>
     <span class="freason">根据截图，页面顶部有B站Logo和导航栏（首页、番剧、直播等），下方有分类标签（热门、番剧、国创等）以及多个视频卡片组成的网格布局。这是典型的B站首页/信息流页面结构，而非单一的活动页或作品详情页（后者通常只有一个主视觉大图和一个明确标题）。因此该陈述为假。</span></a></div></section>
-<section id="results"><h2>用例结果（4）<span class="muted">点击用例行展开核心校验与完整回放</span></h2>
+<section id="results"><h2>用例结果（5）<span class="muted">点击用例行展开核心校验与完整回放</span></h2>
 <div class="toolbar"><button type="button" class="btn" data-act="expand-all">全部展开</button><button type="button" class="btn" data-act="collapse-all">全部收起</button><button type="button" class="btn" data-act="expand-fail">失败展开</button></div>
 <table class="list"><thead><tr><th>#</th><th>结果</th><th>用例</th><th>核心校验</th><th>耗时</th><th>完整回放</th><th></th></tr></thead>
 <tbody><tr class="case-row ok" data-case="TC-001" data-detail="d-TC-001" title="点击展开/收起：核心校验与完整回放">
@@ -117,11 +116,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-001</b> C01 轮播图片、标题对应与导航控件</td>
       <td class="mono">4/4</td>
       <td class="mono">33.9s</td>
-      <td class="rec"><span class="muted">▶ 在线</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-001.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-001" hidden><td colspan="7"><div class="detail">
     <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/bn-replay-tc001/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 4/4</span> · 耗时 33.9s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（4 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -150,7 +150,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">见下方按钮</span></div>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-001">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-001.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（5 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -162,11 +167,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-002</b> C02 轮播自动播放与内容同步</td>
       <td class="mono">3/3</td>
       <td class="mono">35.5s</td>
-      <td class="rec"><span class="muted">▶ 在线</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-002.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-002" hidden><td colspan="7"><div class="detail">
     <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/bn-replay-tc002/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 3/3</span> · 耗时 35.5s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（3 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -189,7 +195,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">见下方按钮</span></div>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-002">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-002.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（6 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -201,11 +212,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-003</b> C03 轮播箭头与圆点切换</td>
       <td class="mono">4/4</td>
       <td class="mono">42.3s</td>
-      <td class="rec"><span class="muted">▶ 在线</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-003.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-003" hidden><td colspan="7"><div class="detail">
     <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/bn-replay-tc003/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 4/4</span> · 耗时 42.3s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（4 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -234,7 +246,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">见下方按钮</span></div>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-003">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-003.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（8 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -246,11 +263,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-004</b> C05 轮播标题与图片区域跳转</td>
       <td class="mono">2/3</td>
       <td class="mono">66.8s</td>
-      <td class="rec"><span class="muted">▶ 在线</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-004.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-004" hidden><td colspan="7"><div class="detail">
     <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/bn-replay-tc004/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 3/3</span> · 耗时 66.8s · 🔁 复测 · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A3</code></span></div>
     <div class="err-body">根据截图，页面顶部有B站Logo和导航栏（首页、番剧、直播等），下方有分类标签（热门、番剧、国创等）以及多个视频卡片组成的网格布局。这是典型的B站首页/信息流页面结构，而非单一的活动页或作品详情页（后者通常只有一个主视觉大图和一个明确标题）。因此该陈述为假。</div>
@@ -277,12 +295,34 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">见下方按钮</span></div>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-004">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-004.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（10 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
     <tr class=""><td>1</td><td class="mono">ai_wait_for</td><td>首页 Banner 轮播区域已加载完成，主图与底部标题可见</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>2</td><td class="mono">assert</td><td>Banner 底部标题文案与当前主图画面主题一致，属于同一张轮播</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>3</td><td class="mono">ai_tap</td><td>Banner 底部的标题文字（当前轮播的标题文案，不是图片区）</td><td>✅</td><td>-</td></tr><tr class=""><td>4</td><td class="mono">ai_wait_for</td><td>点击标题后打开的落地页主要内容已加载完成</td><td>✅</td><td>-</td></tr><tr class=""><td>5</td><td class="mono">assert</td><td>落地页是一个活动页或作品详情页：页面有明确的标题文案与主视觉大图，不是B站首页，也不是 404/错误页</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>6</td><td class="mono">navigate</td><td>https://www.bilibili.com/</td><td>✅</td><td>-</td></tr><tr class=""><td>7</td><td class="mono">ai_wait_for</td><td>返回首页后 Banner 轮播区域已重新加载完成</td><td>✅</td><td>-</td></tr><tr class=""><td>8</td><td class="mono">ai_tap</td><td>Banner 主图的画面区域（非标题文字区，取图片中部）</td><td>✅</td><td>-</td></tr><tr class=""><td>9</td><td class="mono">ai_wait_for</td><td>点击图片后打开的落地页主要内容已加载完成</td><td>✅</td><td>-</td></tr><tr class="bad"><td>10</td><td class="mono">assert</td><td>落地页是一个活动页或作品详情页：页面有明确的标题文案与主视觉大图，不是B站首页，也不是 404/错误页</td><td>❌</td><td><span class="cfile">截图</span></td></tr>
     </tbody></table></details>
+  </div></td></tr><tr class="case-row muted" data-case="TC-005" data-detail="d-TC-005" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">5</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-005</b> A05 首页 SSR 降级 CSR 完整兜底</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-005" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P0 · 分类 needs-environment · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：需要带 SSR-Degrade=1 请求头请求首页，并核对响应头 SSR-Degrade 与 Server-Timing；需要 sh001 与 sh004 两个机房分别验证降级兜底</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
   </div></td></tr></tbody></table>
 </section>
 </main>
@@ -345,21 +385,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   });
 })();
 </script>
+<div id="lb"><img alt=""><div class="hint">点击任意位置关闭</div></div>
 <script>
-(function(){
-  var lb=document.createElement('div'); lb.id='lb';
-  lb.innerHTML='<img alt=""><div class="hint">点击任意位置关闭</div>';
-  document.body.appendChild(lb);
-  var im=lb.querySelector('img');
-  document.addEventListener('click',function(e){
-    var t=e.target;
-    if(t.tagName==='IMG' && t.src && t.src.indexOf('data:image')===0){
-      im.src=t.src; lb.classList.add('on'); e.preventDefault(); return;
-    }
-    if(t===lb||t===im){lb.classList.remove('on'); im.removeAttribute('src');}
-  });
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
-})();
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.addEventListener('click',function(e){var t=e.target;
+ if(t.tagName==='IMG'&&t.src&&t.src.indexOf('data:image')===0){im.src=t.src;lb.classList.add('on');e.preventDefault();return;}
+ if(t===lb||t===im){lb.classList.remove('on');im.removeAttribute('src');}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});})();
 </script>
-
 </body></html>

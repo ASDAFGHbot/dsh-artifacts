@@ -306,12 +306,12 @@
       "title": "laputa-home banner 执行报告（qwen3.8-flash）",
       "kind": "html",
       "createdAt": "2026-11-23T03:29:51.407Z",
-      "updatedAt": "2026-11-23T03:48:04.583Z",
-      "rev": 3,
+      "updatedAt": "2026-11-23T03:57:51.401Z",
+      "rev": 4,
       "files": [
         "index.html"
       ],
-      "description": "laputa-home banner 图章节 Midscene 执行报告（qwen3.8-flash，登录态）：结果表、断言明细与截图（点击页内放大）、4 条在线回放；单一工具栏 全部展开/全部收起/失败展开"
+      "description": "laputa-home banner 图章节 Midscene 执行报告（qwen3.8-flash，登录态）：KPI 含未执行用例（TC-005 计 1，附未执行原因），断言明细与截图（点击放大）、4 条在线回放、单一工具栏"
     },
     "laputa-home-banner-summary": {
       "id": "laputa-home-banner-summary",
