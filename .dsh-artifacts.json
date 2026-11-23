@@ -557,6 +557,18 @@
         "index.html"
       ],
       "description": "TC-003 D01 推荐卡字段与悬停交互 Midscene 在线回放（qwen3.8-flash，mid 14135892）"
+    },
+    "tj-replay-tc004": {
+      "id": "tj-replay-tc004",
+      "title": "推荐流 TC-004 回放",
+      "kind": "html",
+      "createdAt": "2026-11-23T07:04:30.470Z",
+      "updatedAt": "2026-11-23T07:04:30.470Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "TC-004 D04 下滑加载更多 Midscene 在线回放（qwen3.8-flash，mid 14135892）"
     }
   },
   "tombstones": []
