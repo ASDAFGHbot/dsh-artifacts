@@ -37,6 +37,18 @@
       ],
       "description": "banner TC-003 回放（qwen3.8-flash，登录态）：轮播箭头与圆点切换"
     },
+    "bn-replay-tc004": {
+      "id": "bn-replay-tc004",
+      "title": "banner 回放 TC-004",
+      "kind": "html",
+      "createdAt": "2026-11-23T03:28:56.649Z",
+      "updatedAt": "2026-11-23T03:28:56.649Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "banner TC-004 回放（qwen3.8-flash，登录态）：轮播标题与图片区域跳转"
+    },
     "dd-replay-tc001": {
       "id": "dd-replay-tc001",
       "title": "顶导回放 TC-001",
