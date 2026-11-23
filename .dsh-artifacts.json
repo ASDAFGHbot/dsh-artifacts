@@ -366,12 +366,12 @@
       "title": "laputa-home 顶导视觉回归总结（qwen3.8-flash）",
       "kind": "html",
       "createdAt": "2026-11-20T06:29:27.084Z",
-      "updatedAt": "2026-11-23T02:31:52.737Z",
-      "rev": 3,
+      "updatedAt": "2026-11-23T06:20:24.133Z",
+      "rev": 4,
       "files": [
         "index.html"
       ],
-      "description": "laputa-home 顶导章节视觉回归总结（qwen3.8-flash，登录态 mid 14135892）：20 条结果、断言明细与截图、访问轨迹、失败归类，每条用例带「▶ 在线回放」；顶部有全部展开/收起/展开失败"
+      "description": "laputa-home 顶导章节视觉回归总结（qwen3.8-flash，登录态）：执行 20 条结果 + 未执行 9 条（含阻塞项与原因）、断言明细与截图、访问轨迹、20 条在线回放、工具栏三按钮"
     },
     "laputa-home-ds-replay-tc004": {
       "id": "laputa-home-ds-replay-tc004",
