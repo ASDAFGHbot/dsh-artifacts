@@ -534,6 +534,18 @@
       ],
       "description": "laputa-home 分区 TC-102（H02 吸顶导航 hover/更多/跳转）Midscene 完整回放：逐步截图、定位过程、模型输出"
     },
+    "laputa-home-tuijian-report": {
+      "id": "laputa-home-tuijian-report",
+      "title": "laputa-home 推荐视频流执行报告（qwen3.8-flash）",
+      "kind": "html",
+      "createdAt": "2026-11-23T07:05:46.933Z",
+      "updatedAt": "2026-11-23T07:05:46.933Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home 推荐视频流章 Midscene 执行报告（qwen3.8-flash，登录态 mid 14135892）：11 条用例（执行 9、未执行 2 注明原因）、断言明细与截图（点击放大）、9 条在线回放、单一工具栏"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
