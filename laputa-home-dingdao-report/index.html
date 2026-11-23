@@ -49,6 +49,7 @@ tr.detail-row .detail{padding:12px 14px;background:var(--card);border:1px solid 
 .detail-meta a{color:#0969da}
 .detail-meta .gap{color:var(--warn)}
 .errbox{background:#fff8f8;border:1px solid #f3d7da;border-radius:8px;padding:9px 12px;margin:8px 0}
+.notebox{background:#f6f8fa;border:1px solid var(--line);border-left:3px solid #9aa4ae;border-radius:6px;padding:8px 12px;margin:8px 0;color:#3c444d;font-size:13px}
 .err-h{display:flex;gap:10px;align-items:center;font-size:13px;margin-bottom:4px}
 .err-body{font-size:13px;word-break:break-word}
 .block{margin:12px 0}
@@ -88,20 +89,18 @@ figure.shot figcaption{font-size:11px;color:var(--muted);margin-top:2px}
 footer{color:var(--muted);font-size:12px;text-align:center;padding:8px 0 30px}
 
 .cfile{color:#5b6570}
-#lb{position:fixed;inset:0;background:rgba(12,14,18,.92);display:none;align-items:center;justify-content:center;
-z-index:9999;cursor:zoom-out;padding:20px}
-#lb.on{display:flex}
-#lb img{max-width:96vw;max-height:92vh;border-radius:8px;box-shadow:0 12px 48px rgba(0,0,0,.5);border:none;margin:0}
+#lb{position:fixed;inset:0;background:rgba(12,14,18,.92);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}
+#lb.on{display:flex}#lb img{max-width:96vw;max-height:92vh;border-radius:8px;border:none;margin:0}
 #lb .hint{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);color:#cfd6dd;font-size:12px}
-.zoom img{cursor:zoom-in}
-
+.zoom img{cursor:zoom-in}img{cursor:zoom-in}
+.notebox{background:#f6f8fa;border:1px solid #e4e7eb;border-left:3px solid #9aa4ae;border-radius:6px;padding:8px 12px;margin:8px 0;color:#3c444d;font-size:13px}
 </style></head>
 <body>
 <header>
   <h1>laputa-home 顶导视觉回归（qwen3.8-flash）</h1>
   <div class="hline"></div>
   <div class="meta">运行 20261119-1720 · 环境 tbd · 开始 2026-11-20 14:10:50 · 耗时 15m 59s（用例累计） · 执行窗口 16m 30s · Midscene 回放 20/20 条</div>
-  <div class="kpis"><div class="kpi"><b>20</b><span>用例总数</span></div><div class="kpi ok"><b>7</b><span>通过</span></div><div class="kpi bad"><b>13</b><span>失败</span></div><div class="kpi bad"><b>35%</b><span>通过率</span></div><div class="kpi"><b>20</b><span>已执行</span></div><div class="kpi muted"><b>0</b><span>未执行 / 跳过</span></div><div class="kpi plat"><b>0</b><span>环境异常</span></div></div>
+  <div class="kpis"><div class="kpi"><b>29</b><span>用例总数</span></div><div class="kpi ok"><b>7</b><span>通过</span></div><div class="kpi bad"><b>13</b><span>失败</span></div><div class="kpi bad"><b>35%</b><span>通过率</span></div><div class="kpi"><b>20</b><span>已执行</span></div><div class="kpi muted"><b>9</b><span>未执行 / 跳过</span></div><div class="kpi plat"><b>0</b><span>环境异常</span></div></div>
 </header>
 <main>
 <section id="failures"><h2>失败摘要（13）<span class="muted">点击打开对应用例明细</span></h2><div class="faillist"><a class="fail-item bad" href="#d-TC-007" data-open-case="TC-007">
@@ -144,7 +143,7 @@ z-index:9999;cursor:zoom-out;padding:20px}
     <span class="badge warn">⚠️ 测试问题</span><b>TC-046</b>
     <span class="fname">B46 花生与 updream 运营素材点击跳转</span>
     <span class="freason">failed to locate element: 未找到顶栏右侧的「投稿」按钮，当前可见的是「创作者学院」按钮。</span></a></div></section>
-<section id="results"><h2>用例结果（20）<span class="muted">点击用例行展开核心校验与完整回放</span></h2>
+<section id="results"><h2>用例结果（29）<span class="muted">点击用例行展开核心校验与完整回放</span></h2>
 <div class="toolbar"><button type="button" class="btn" data-act="expand-all">全部展开</button><button type="button" class="btn" data-act="collapse-all">全部收起</button><button type="button" class="btn" data-act="expand-fail">失败展开</button></div>
 <table class="list"><thead><tr><th>#</th><th>结果</th><th>用例</th><th>核心校验</th><th>耗时</th><th>完整回放</th><th></th></tr></thead>
 <tbody><tr class="case-row ok" data-case="TC-001" data-detail="d-TC-001" title="点击展开/收起：核心校验与完整回放">
@@ -153,11 +152,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-001</b> B01 顶导三栏、Banner 与分区基础渲染</td>
       <td class="mono">4/4</td>
       <td class="mono">29.1s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-001.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-001" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 4/4</span> · 耗时 29.1s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc001/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 4/4</span> · 耗时 29.1s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（4 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -186,8 +186,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc001/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-001">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-001.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（6 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -199,11 +203,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-007</b> B07 搜索框默认词、历史与热搜面板</td>
       <td class="mono">3/4</td>
       <td class="mono">47.8s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-007.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-007" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-data · <span class="gap">预期覆盖 4/7（未覆盖预期 #3, #4, #5）</span> · 耗时 47.8s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc007/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-data · <span class="gap">预期覆盖 4/7（未覆盖预期 #3, #4, #5）</span> · 耗时 47.8s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A5</code></span></div>
     <div class="err-body">根据截图，当前页面显示的是搜索结果页（用户标签页），搜索框位于顶部导航栏下方。截图中并未展示“点击空白处后搜索面板收起”的交互状态变化过程，仅展示了静态的搜索结果界面。无法从单张静态截图中验证动态交互行为（如焦点失去、面板收起等）。因此，该陈述的真实性无法基于当前截图直接确认。</div>
@@ -236,8 +241,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc007/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-007">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-007.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（9 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -249,11 +258,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-008</b> B08 搜索联想、键盘选择、清空与提交</td>
       <td class="mono">3/3</td>
       <td class="mono">44.9s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-008.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-008" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 2/6（未覆盖预期 #3, #4, #5, #6）</span> · 耗时 44.9s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc008/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 2/6（未覆盖预期 #3, #4, #5, #6）</span> · 耗时 44.9s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（3 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -276,8 +286,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc008/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-008">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-008.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（15 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -289,11 +303,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-011</b> B11 已登录右侧入口展示与悬停反馈</td>
       <td class="mono">3/4</td>
       <td class="mono">30.2s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-011.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-011" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="">预期覆盖 4/4</span> · 耗时 30.2s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc011/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="">预期覆盖 4/4</span> · 耗时 30.2s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A3</code></span></div>
     <div class="err-body">该陈述涉及悬停普通入口时图标上跳、文字不抖动以及展开前后相邻入口位置不发生位移等动态交互效果。当前截图为静态页面，无法观察到悬停动画或展开前后的位置变化，因此无法验证该陈述的真实性。</div>
@@ -326,8 +341,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc011/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-011">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-011.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（7 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -339,11 +358,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-012</b> B12 头像账户面板字段与个人空间跳转</td>
       <td class="mono">4/6</td>
       <td class="mono">42s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-012.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-012" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="">预期覆盖 6/6</span> · 耗时 42s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc012/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="">预期覆盖 6/6</span> · 耗时 42s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A4</code></span></div>
     <div class="err-body">根据截图，用户信息面板中显示了用户名“bilitest23233”，其下方有“百年大会员”标签和“LV6+”等级标识。再下方显示“硬币: 7.7万 B币: 1.42”。接着是关注、粉丝、动态的数量统计。在权益区域，有一个粉色框提示“尊贵的大会员有权益...戳我查看新福利”，旁边有“会员中心”按钮。截图中并未显示当前等级与下一等级的进度条，也没有悬停后出现等级权益与「会员等级相关说明」入口的交互状态。</div>
@@ -388,8 +408,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc012/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-012">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-012.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -401,11 +425,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-013</b> B13 深色主题偏好持久化</td>
       <td class="mono">3/4</td>
       <td class="mono">53.9s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-013.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-013" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="">预期覆盖 3/3</span> · 耗时 53.9s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc013/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="">预期覆盖 3/3</span> · 耗时 53.9s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A4</code></span></div>
     <div class="err-body">根据截图，当前页面处于深色主题状态。在用户面板中，“主题: 深色”选项已展开，显示了“深色（内测）”和“浅色”两个子选项。然而，截图中并未展示选择“浅色”后的结果，因此无法验证页面是否会恢复为浅色主题。</div>
@@ -438,8 +463,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc013/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-013">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-013.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（13 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -451,11 +480,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-014</b> B14 消息数字角标、分类与跳转</td>
       <td class="mono">4/5</td>
       <td class="mono">46.7s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-014.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-014" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 5/6（未覆盖预期 #5）</span> · 耗时 46.7s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc014/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 5/6（未覆盖预期 #5）</span> · 耗时 46.7s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A6</code></span></div>
     <div class="err-body">当前截图显示的是B站消息中心页面（左侧高亮“我的消息”，右侧展示最近消息列表），并非首页。截图中无法观察到“直接点击「消息」入口后首页仍保持可用”这一交互行为，也无法验证“点击与 hover 展开互不影响”。因此该陈述在当前视图中不可证实。</div>
@@ -494,8 +524,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc014/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-014">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-014.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -507,11 +541,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-018</b> B18 未登录登录引导</td>
       <td class="mono">2/3</td>
       <td class="mono">47.5s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-018.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-018" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 3/3</span> · 耗时 47.5s · 🔁 复测 · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc018/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="">预期覆盖 3/3</span> · 耗时 47.5s · 🔁 复测 · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A2</code></span></div>
     <div class="err-body">根据截图，当前显示的是一个较大的登录弹窗（包含二维码、密码登录、短信登录等完整选项），而非“mini 登录框”。背景首页内容虽然可见，但被半透明遮罩覆盖且模糊化，不符合“mini 登录框”的典型特征。因此，“点击「立即登录」后出现 mini 登录框”这一描述不成立。</div>
@@ -538,8 +573,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc018/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-018">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-018.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（9 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -551,11 +590,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-019</b> B19 未登录功能入口统一登录拦截</td>
       <td class="mono">5/6</td>
       <td class="mono">64.1s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-019.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-019" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 2/3（未覆盖预期 #2）</span> · 耗时 64.1s · 🔁 复测 · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc019/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 2/3（未覆盖预期 #2）</span> · 耗时 64.1s · 🔁 复测 · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A1</code></span></div>
     <div class="err-body">根据截图，当前页面右上角弹出了一个登录提示框。该提示框的标题文案为“登录即可查看我的收藏”，而不是“登录即可查看消息记录”。虽然鼠标可能悬停在“消息”图标上（或者这是从收藏/历史等入口触发的弹窗），但实际显示的文案明确指向“收藏”。因此，陈述中的文案与实际显示不符。</div>
@@ -600,8 +640,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc019/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-019">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-019.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（17 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -613,11 +657,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-031</b> B31 番剧、直播与会员购直达入口（无 hover 面板）</td>
       <td class="mono">1/1</td>
       <td class="mono">34.4s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-031.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-031" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 1/4（未覆盖预期 #2, #3, #4）</span> · 耗时 34.4s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc031/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 1/4（未覆盖预期 #2, #3, #4）</span> · 耗时 34.4s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（1 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -628,8 +673,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc031/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-031">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-031.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（8 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -641,11 +690,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-032</b> B32 游戏中心浮层、榜单悬停预览与跳转</td>
       <td class="mono">2/4</td>
       <td class="mono">51.6s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-032.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-032" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 4/5（未覆盖预期 #4）</span> · 耗时 51.6s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc032/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 4/5（未覆盖预期 #4）</span> · 耗时 51.6s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A1</code></span></div>
     <div class="err-body">根据截图，左上角浮层左侧展示了多个游戏 Banner（如“终结万圣节”、“明日方舟”、“碧蓝航线”、“三国：谋定天下”），数量超过 3 个；右侧标题为“新游预告”，下方列出了多个预告条目。因此，“最多 3 个游戏入口”这一描述与实际不符。</div>
@@ -678,8 +728,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc032/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-032">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-032.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -691,11 +745,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-033</b> B33 漫画浮层、榜单悬停封面与跳转</td>
       <td class="mono">3/4</td>
       <td class="mono">62s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-033.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-033" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 4/5（未覆盖预期 #4）</span> · 耗时 62s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc033/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 4/5（未覆盖预期 #4）</span> · 耗时 62s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A5</code></span></div>
     <div class="err-body">当前截图显示的是哔哩哔哩漫画的「石之海」详情页，页面顶部导航栏中可见“首页”“分类”“更新”“排行榜”等入口，但没有任何浮层（如悬停展开的下拉菜单或弹出面板）处于展开状态。截图中未出现任何与“移出后浮层已收起，重新悬停「漫画」才会再次展开”相关的交互痕迹或视觉元素，因此无法从当前静态画面直接验证该动态行为是否成立；但该描述本身是一个关于UI交互逻辑的陈述，而当前页面无浮层展开，符合“浮层已收起”的状态前提。由于没有证据表明存在一个名为「漫画」的可悬停触发浮层的控件（导航栏中无“漫画”字样），该陈述的前提不成立。</div>
@@ -728,8 +783,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc033/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-033">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-033.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -741,11 +800,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-034</b> B34 赛事浮层、热门赛事与订阅</td>
       <td class="mono">3/5</td>
       <td class="mono">84s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-034.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-034" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 5/7（未覆盖预期 #4, #6）</span> · 耗时 84s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc034/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 5/7（未覆盖预期 #4, #6）</span> · 耗时 84s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A5</code></span></div>
     <div class="err-body">根据截图，页面主要展示了一个正在直播的王者荣耀全球电竞赛事画面（BOOM vs GKE），包含选手特写、比分和英雄选择界面。页面上方是导航栏，下方是页脚链接。截图中并未出现任何名为“精彩预告”的板块，也没有看到包含时间、赛事名以及“订阅/已订阅”按钮的列表项。</div>
@@ -784,8 +844,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc034/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-034">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-034.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -797,11 +861,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-036</b> B36 头像个人入口与推荐服务二级菜单</td>
       <td class="mono">2/3</td>
       <td class="mono">53.6s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-036.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-036" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 3/5（未覆盖预期 #4, #5）</span> · 耗时 53.6s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc036/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 3/5（未覆盖预期 #4, #5）</span> · 耗时 53.6s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A3</code></span></div>
     <div class="err-body">根据当前截图，用户悬停在二级菜单“直播中心”上。该菜单项的文字颜色为黑色（默认态），并未变为品牌蓝色。同时，其他菜单项如“我的课程”、“B币钱包”等也保持默认状态，面板未关闭。因此，关于“该项文字变为品牌蓝色”的描述不成立。</div>
@@ -828,8 +893,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc036/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-036">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-036.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -841,11 +910,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-040</b> B40 大会员浮层物料与充值入口</td>
       <td class="mono">4/4</td>
       <td class="mono">33.2s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-040.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-040" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 4/5（未覆盖预期 #5）</span> · 耗时 33.2s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc040/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 4/5（未覆盖预期 #5）</span> · 耗时 33.2s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（4 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -874,8 +944,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc040/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-040">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-040.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（8 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -887,11 +961,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-041</b> B41 投稿按钮与投稿浮层</td>
       <td class="mono">4/5</td>
       <td class="mono">57s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-041.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-041" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 5/6（未覆盖预期 #4）</span> · 耗时 57s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc041/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 5/6（未覆盖预期 #4）</span> · 耗时 57s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>视觉断言未通过</b><span class="muted">步骤 <code>A3</code></span></div>
     <div class="err-body">根据截图，右上角的投稿入口区域显示了三个入口：“专栏投稿”、“视频投稿”和“投稿管理”。目前没有任何一个入口处于悬停状态（背景加深），因此无法验证“悬停单个入口时该项背景加深”这一行为。此外，虽然当前布局看起来稳定，但仅凭静态截图无法判断在悬停或文案变化时宽度是否保持稳定。由于缺乏动态交互的证据，该陈述无法被确认为真。</div>
@@ -930,8 +1005,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc041/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-041">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-041.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -943,11 +1022,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-043</b> B43 首页顶导首页入口点击刷新</td>
       <td class="mono">3/3</td>
       <td class="mono">38.6s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-043.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-043" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 3/4（未覆盖预期 #3）</span> · 耗时 38.6s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc043/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 3/4（未覆盖预期 #3）</span> · 耗时 38.6s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（3 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -970,8 +1050,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc043/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-043">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-043.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（7 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -983,11 +1067,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-044</b> B44 点击个人头像进入本人空间</td>
       <td class="mono">3/3</td>
       <td class="mono">39.2s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-044.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-044" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 3/4（未覆盖预期 #3）</span> · 耗时 39.2s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc044/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 3/4（未覆盖预期 #3）</span> · 耗时 39.2s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（3 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A1</b>
@@ -1010,8 +1095,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc044/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-044">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-044.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（8 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -1023,11 +1112,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-046</b> B46 花生与 updream 运营素材点击跳转</td>
       <td class="mono">1/2</td>
       <td class="mono">42.4s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-046.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-046" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 3/4（未覆盖预期 #4）</span> · 耗时 42.4s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc046/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 ready · <span class="gap">预期覆盖 3/4（未覆盖预期 #4）</span> · 耗时 42.4s · <span class="cfile">result.json</span></div>
+    
     <div class="errbox">
     <div class="err-h"><b>动作未成功（ai_hover）</b><span class="muted">步骤 <code>S7</code></span></div>
     <div class="err-body">failed to locate element: 未找到顶栏右侧的「投稿」按钮，当前可见的是「创作者学院」按钮。</div>
@@ -1048,8 +1138,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc046/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-046">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-046.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
@@ -1061,11 +1155,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
       <td class="cname"><b>TC-037</b> B37 头像主题二级菜单与退出登录</td>
       <td class="mono">4/4</td>
       <td class="mono">57s</td>
-      <td class="rec"><span class="muted">▶ 本地</span></td>
+      <td class="rec"><a href="midscene_run/report/TC-037.html" target="_blank" rel="noreferrer" title="Midscene 完整回放">▶ HTML</a></td>
       <td class="chev">›</td>
     </tr>
     <tr class="detail-row" id="d-TC-037" hidden><td colspan="7"><div class="detail">
-    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 4/5（未覆盖预期 #1）</span> · 耗时 57s · <span class="cfile">result.json</span></div>
+    <div class="detail-meta"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc037/" target="_blank" rel="noreferrer" style="margin-right:8px">▶ 在线回放</a> · <a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 分类 needs-account · <span class="gap">预期覆盖 4/5（未覆盖预期 #1）</span> · 耗时 57s · <span class="cfile">result.json</span></div>
+    
     
     <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（4 条）</span></div><div class="check ok">
     <div class="check-h"><span class="cres">✅</span><b>A2</b>
@@ -1094,13 +1189,170 @@ z-index:9999;cursor:zoom-out;padding:20px}
   </div></section>
     
     <section class="block">
-    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 / 定位过程 / 模型输出）</span></div>
-    <p class="muted"><a class="btn primary" href="https://asdafghbot.github.io/dsh-artifacts/dd-replay-tc037/" target="_blank" rel="noreferrer">▶ 在线打开回放</a></p>
+    <div class="block-h">完整回放 <span class="muted">Midscene HTML（逐步截图 + 定位过程 + 模型输出）</span></div>
+    <div class="replay-bar">
+      <button type="button" class="btn primary" data-replay="TC-037">▶ 加载完整回放</button>
+      <a class="btn" href="midscene_run/report/TC-037.html" target="_blank" rel="noreferrer">新标签打开</a>
+      <span class="muted">在线回放见用例标题右侧按钮</span>
+    </div>
   </section>
     <details class="full"><summary>执行步骤与结果（11 步）</summary>
     <table class="tbl"><thead><tr><th>#</th><th>类型</th><th>描述</th><th>结果</th><th>截图</th></tr></thead><tbody>
     <tr class=""><td>1</td><td class="mono">ai_wait_for</td><td>顶栏右侧的头像入口已渲染</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>2</td><td class="mono">ai_hover</td><td>顶栏右侧的头像入口</td><td>✅</td><td>-</td></tr><tr class=""><td>3</td><td class="mono">ai_hover</td><td>账户面板中的「主题」行</td><td>✅</td><td>-</td></tr><tr class=""><td>4</td><td class="mono">ai_hover</td><td>主题右侧二级菜单中的「深色」项</td><td>✅</td><td>-</td></tr><tr class=""><td>5</td><td class="mono">assert</td><td>悬停主题行后右侧出现「深色」「浅色」二级菜单，深色项带「内测」标记</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>6</td><td class="mono">ai_tap</td><td>主题二级菜单中当前未选中的主题</td><td>✅</td><td>-</td></tr><tr class=""><td>7</td><td class="mono">assert</td><td>点击后页面即时切换主题，菜单状态与页面主题同步</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>8</td><td class="mono">ai_tap</td><td>账户面板底部的「退出登录」</td><td>✅</td><td>-</td></tr><tr class=""><td>9</td><td class="mono">ai_wait_for</td><td>页面已刷新为未登录态</td><td>✅</td><td>-</td></tr><tr class=""><td>10</td><td class="mono">assert</td><td>退出登录后页面刷新为未登录顶导，原头像与已登录专属入口消失</td><td>✅</td><td><span class="cfile">截图</span></td></tr><tr class=""><td>11</td><td class="mono">assert</td><td>退出后登录按钮、未登录入口与首页主内容仍可用，无白屏或残留账户信息</td><td>✅</td><td><span class="cfile">截图</span></td></tr>
     </tbody></table></details>
+  </div></td></tr><tr class="case-row muted" data-case="TC-002" data-detail="d-TC-002" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">21</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-002</b> B02 顶导响应式布局</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-002" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-environment · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：需要 1480/1260/1000 三档视口</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-038" data-detail="d-TC-038" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">22</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-038</b> B38 动态浮层“最新动态/历史动态”查看状态</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-038" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-seeding · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：未查看的新动态；关注列表有直播中 UP 主</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-047" data-detail="d-TC-047" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">23</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-047</b> B47 动态浮层直播 UP 主与“查看更多”跳转</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-047" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-seeding · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：关注列表有直播中 UP 主</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-015" data-detail="d-TC-015" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">24</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-015</b> B15 收藏面板双列滚动、Tab 与稿件跳转</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-015" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-seeding · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：收藏夹数量足够滚动；稍后再看有内容</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-045" data-detail="d-TC-045" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">25</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-045</b> B45 收藏与稍后再看底部动作跳转</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-045" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-seeding · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：收藏夹与稍后再看均有内容</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-039" data-detail="d-TC-039" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">26</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-039</b> B39 历史面板三类卡片、滚动到底与跳转</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-039" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-seeding · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：视频/直播/专栏三类历史记录</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-048" data-detail="d-TC-048" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">27</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-048</b> B48 历史续播卡片</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-048" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P2 · 分类 needs-seeding · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：20 分钟内跨设备未看完记录</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-030" data-detail="d-TC-030" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">28</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-030</b> B30 非首页共享顶导（播放页/空间页/动态页）首页入口分区面板</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-030" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P0 · 分类 needs-data · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：非首页 URL（播放页/空间页/动态页）</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
+  </div></td></tr><tr class="case-row muted" data-case="TC-035" data-detail="d-TC-035" title="点击展开/收起：核心校验与完整回放">
+      <td class="num">29</td>
+      <td><span class="badge muted">⏭ 未执行</span></td>
+      <td class="cname"><b>TC-035</b> B35 下载客户端浮层、系统识别与下载</td>
+      <td class="mono">-</td>
+      <td class="mono">-</td>
+      <td class="rec"><span class="muted">—</span></td>
+      <td class="chev">›</td>
+    </tr>
+    <tr class="detail-row" id="d-TC-035" hidden><td colspan="7"><div class="detail">
+    <div class="detail-meta"><a href="https://www.bilibili.com/" target="_blank" rel="noreferrer">打开页面</a> · 优先级 P1 · 分类 needs-environment · 耗时 - · <span class="cfile">result.json</span></div>
+    <div class="notebox"><b>未执行原因</b>：Mac 与 Windows 两种系统标识</div>
+    
+    <section class="block"><div class="block-h">核心校验 <span class="muted">预期 / AI 关键原因 / 截图（0 条）</span></div><div class="muted">本用例没有视觉断言（计划中未声明 assert 步骤）。</div></section>
+    
+    <section class="block"><div class="block-h">完整回放 <span class="muted">未生成</span></div><div class="muted">该用例没找到 Midscene HTML 回放；run.mjs 默认会为每条用例生成，可检查是否用了 --no-midscene-report。</div></section>
+    
   </div></td></tr></tbody></table>
 </section>
 </main>
@@ -1163,21 +1415,12 @@ z-index:9999;cursor:zoom-out;padding:20px}
   });
 })();
 </script>
+<div id="lb"><img alt=""><div class="hint">点击任意位置关闭</div></div>
 <script>
-(function(){
-  var lb=document.createElement('div'); lb.id='lb';
-  lb.innerHTML='<img alt=""><div class="hint">点击任意位置关闭</div>';
-  document.body.appendChild(lb);
-  var im=lb.querySelector('img');
-  document.addEventListener('click',function(e){
-    var t=e.target;
-    if(t.tagName==='IMG' && t.src && t.src.indexOf('data:image')===0){
-      im.src=t.src; lb.classList.add('on'); e.preventDefault(); return;
-    }
-    if(t===lb||t===im){lb.classList.remove('on'); im.removeAttribute('src');}
-  });
-  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
-})();
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.addEventListener('click',function(e){var t=e.target;
+ if(t.tagName==='IMG'&&t.src&&t.src.indexOf('data:image')===0){im.src=t.src;lb.classList.add('on');e.preventDefault();return;}
+ if(t===lb||t===im){lb.classList.remove('on');im.removeAttribute('src');}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});})();
 </script>
-
 </body></html>
