@@ -593,6 +593,18 @@
         "index.html"
       ],
       "description": "TC-006 D09 稍后再看入口 Midscene 在线回放（qwen3.8-flash，mid 14135892）"
+    },
+    "tj-replay-tc007": {
+      "id": "tj-replay-tc007",
+      "title": "推荐流 TC-007 回放",
+      "kind": "html",
+      "createdAt": "2026-11-23T07:05:02.640Z",
+      "updatedAt": "2026-11-23T07:05:02.640Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "TC-007 D10 作者与封面跳转分流 Midscene 在线回放（qwen3.8-flash，mid 14135892）"
     }
   },
   "tombstones": []
