@@ -1,6 +1,18 @@
 {
   "version": 1,
   "artifacts": {
+    "dd-replay-tc001": {
+      "id": "dd-replay-tc001",
+      "title": "顶导回放 TC-001",
+      "kind": "html",
+      "createdAt": "2026-11-23T02:28:03.104Z",
+      "updatedAt": "2026-11-23T02:28:03.104Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "顶导 TC-001 回放（qwen3.8-flash，登录态 mid 14135892）"
+    },
     "laputa-home-2026-11-19-lhfv7l": {
       "id": "laputa-home-2026-11-19-lhfv7l",
       "title": "laputa-home 分区视觉回归总结（2026-11-19）",
