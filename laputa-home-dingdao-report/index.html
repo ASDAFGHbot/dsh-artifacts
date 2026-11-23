@@ -95,14 +95,6 @@ z-index:9999;cursor:zoom-out;padding:20px}
 #lb .hint{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);color:#cfd6dd;font-size:12px}
 .zoom img{cursor:zoom-in}
 
-#tb{position:sticky;top:0;z-index:60;display:flex;gap:8px;align-items:center;flex-wrap:wrap;
-background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border:1px solid #e3e6ea;border-radius:10px;
-padding:8px 10px;margin:0 0 14px;box-shadow:0 2px 10px rgba(0,0,0,.05)}
-#tb button{cursor:pointer;border:1px solid #e3e6ea;background:#fff;color:#1f2328;border-radius:8px;
-padding:6px 14px;font-size:13px;line-height:1.2;transition:.15s;font-family:inherit}
-#tb button:hover{border-color:#fb7299;color:#fb7299}
-#tb button.on{background:#fb7299;border-color:#fb7299;color:#fff}
-#tb .tb-info{margin-left:auto;font-size:12px;color:#8a929b}
 </style></head>
 <body>
 <header>
@@ -153,7 +145,7 @@ padding:6px 14px;font-size:13px;line-height:1.2;transition:.15s;font-family:inhe
     <span class="fname">B46 花生与 updream 运营素材点击跳转</span>
     <span class="freason">failed to locate element: 未找到顶栏右侧的「投稿」按钮，当前可见的是「创作者学院」按钮。</span></a></div></section>
 <section id="results"><h2>用例结果（20）<span class="muted">点击用例行展开核心校验与完整回放</span></h2>
-<div class="toolbar"><button type="button" class="btn" data-act="expand-all">全部展开</button><button type="button" class="btn" data-act="collapse-all">全部收起</button><button type="button" class="btn" data-act="expand-fail">只展开失败</button></div>
+<div class="toolbar"><button type="button" class="btn" data-act="expand-all">全部展开</button><button type="button" class="btn" data-act="collapse-all">全部收起</button><button type="button" class="btn" data-act="expand-fail">失败展开</button></div>
 <table class="list"><thead><tr><th>#</th><th>结果</th><th>用例</th><th>核心校验</th><th>耗时</th><th>完整回放</th><th></th></tr></thead>
 <tbody><tr class="case-row ok" data-case="TC-001" data-detail="d-TC-001" title="点击展开/收起：核心校验与完整回放">
       <td class="num">1</td>
@@ -1187,30 +1179,5 @@ padding:6px 14px;font-size:13px;line-height:1.2;transition:.15s;font-family:inhe
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});
 })();
 </script>
-<script>
-(function(){
-  var rows=[].slice.call(document.querySelectorAll('tr.case-row'));
-  var bar=document.createElement('div'); bar.id='tb';
-  bar.innerHTML='<button type="button" data-act="expand">全部展开</button>'
-    +'<button type="button" data-act="collapse">全部收起</button>'
-    +'<button type="button" data-act="failed">失败展开</button>'
-    +'<span class="tb-info" id="tb-info"></span>';
-  var host=document.querySelector('table') || document.body;
-  host.parentNode.insertBefore(bar, host);
-  function detailOf(r){var id=r.getAttribute('data-detail');return id?document.getElementById(id):null;}
-  function show(r,v){var d=detailOf(r); if(!d) return; if(v){d.removeAttribute('hidden');} else {d.setAttribute('hidden','');} r.classList.toggle('open',v);}
-  function failed(r){return r.classList.contains('bad')||r.classList.contains('warn');}
-  var nf=rows.filter(failed).length;
-  function info(t){document.getElementById('tb-info').textContent=t;}
-  function sel(a){[].forEach.call(bar.querySelectorAll('button'),function(b){b.classList.toggle('on',b.getAttribute('data-act')===a);});}
-  bar.addEventListener('click',function(e){
-    var b=e.target.closest('button'); if(!b) return; var act=b.getAttribute('data-act');
-    if(act==='expand'){rows.forEach(function(r){show(r,true);});sel('expand');info('已展开全部 '+rows.length+' 条用例');}
-    else if(act==='collapse'){rows.forEach(function(r){show(r,false);});sel('collapse');info('已收起全部');}
-    else {rows.forEach(function(r){show(r,failed(r));});sel('failed');info('已展开失败用例 '+nf+' 条');
-      var f=rows.filter(failed)[0]; if(f){f.scrollIntoView({behavior:'smooth',block:'center'});}}
-  });
-  info('共 '+rows.length+' 条用例，失败 '+nf+' 条');
-})();
-</script>
+
 </body></html>
