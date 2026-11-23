@@ -109,6 +109,18 @@
       ],
       "description": "顶导 TC-019 回放（qwen3.8-flash，未登录 guest）"
     },
+    "dd-replay-tc031": {
+      "id": "dd-replay-tc031",
+      "title": "顶导回放 TC-031",
+      "kind": "html",
+      "createdAt": "2026-11-23T02:29:32.694Z",
+      "updatedAt": "2026-11-23T02:29:32.694Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "顶导 TC-031 回放（qwen3.8-flash，登录态 mid 14135892）"
+    },
     "laputa-home-2026-11-19-lhfv7l": {
       "id": "laputa-home-2026-11-19-lhfv7l",
       "title": "laputa-home 分区视觉回归总结（2026-11-19）",
