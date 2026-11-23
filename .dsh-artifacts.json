@@ -282,12 +282,12 @@
       "title": "laputa-home 顶导执行报告（qwen3.8-flash）",
       "kind": "html",
       "createdAt": "2026-11-20T06:29:38.277Z",
-      "updatedAt": "2026-11-23T02:32:03.882Z",
-      "rev": 2,
+      "updatedAt": "2026-11-23T02:53:09.067Z",
+      "rev": 3,
       "files": [
         "index.html"
       ],
-      "description": "laputa-home 顶导章节 Midscene 执行报告（qwen3.8-flash，登录态）：结果表、逐条断言明细与截图，每条用例带在线回放按钮"
+      "description": "laputa-home 顶导章节 Midscene 执行报告（qwen3.8-flash，登录态）：结果表、逐条断言明细与截图（页内点击放大）、每条用例带回放按钮"
     },
     "laputa-home-dingdao-summary": {
       "id": "laputa-home-dingdao-summary",
