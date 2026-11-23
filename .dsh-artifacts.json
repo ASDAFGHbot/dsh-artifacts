@@ -533,6 +533,18 @@
         "index.html"
       ],
       "description": "laputa-home 分区 TC-102（H02 吸顶导航 hover/更多/跳转）Midscene 完整回放：逐步截图、定位过程、模型输出"
+    },
+    "tj-replay-tc001": {
+      "id": "tj-replay-tc001",
+      "title": "推荐流 TC-001 回放",
+      "kind": "html",
+      "createdAt": "2026-11-23T07:04:09.974Z",
+      "updatedAt": "2026-11-23T07:04:09.974Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "TC-001 A01 首页首屏渲染 Midscene 在线回放（qwen3.8-flash，mid 14135892）"
     }
   },
   "tombstones": []
