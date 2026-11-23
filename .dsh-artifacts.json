@@ -301,6 +301,18 @@
       ],
       "description": "laputa-home 分区视觉回归总结（qwen3.8-flash 轮）：结果、断言明细与截图、跳转校验、模型对照；顶部提供「全部展开 / 全部收起 / 展开失败」"
     },
+    "laputa-home-banner-report": {
+      "id": "laputa-home-banner-report",
+      "title": "laputa-home banner 执行报告（qwen3.8-flash）",
+      "kind": "html",
+      "createdAt": "2026-11-23T03:29:51.407Z",
+      "updatedAt": "2026-11-23T03:29:51.407Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "laputa-home banner 图章节 Midscene 执行报告（qwen3.8-flash，登录态）：结果表、断言明细与截图（点击页内放大）、4 条在线回放、顶部全部展开/全部收起/失败展开"
+    },
     "laputa-home-banner-summary": {
       "id": "laputa-home-banner-summary",
       "title": "laputa-home banner 视觉回归总结（qwen3.8-flash）",
