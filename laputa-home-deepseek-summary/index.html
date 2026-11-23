@@ -27,6 +27,11 @@ padding:6px 14px;font-size:13px;line-height:1.2;transition:.15s}
 .toolbar button:hover{border-color:#fb7299;color:#fb7299}
 .toolbar button.on{background:#fb7299;border-color:#fb7299;color:#fff}
 .toolbar .tb-info{margin-left:auto;font-size:12px;color:#8a929b}
+
+#lb{position:fixed;inset:0;background:rgba(12,14,18,.92);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}
+#lb.on{display:flex}#lb img{max-width:96vw;max-height:92vh;border-radius:8px;border:none;margin:0}
+#lb .hint{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);color:#cfd6dd;font-size:12px}
+img{cursor:zoom-in}
 </style></head><body><div class="wrap">
 <h1>laputa-home 首页核心回归 · 分区章节（DeepSeek v4.1 轮）</h1>
 <div class="sub">需求：laputa-home 首页核心回归用例（2026-11-19）· 第 6 章「分区」5 条 · 生成于 2026-11-20 11:31</div>
@@ -96,5 +101,13 @@ padding:6px 14px;font-size:13px;line-height:1.2;transition:.15s}
   });
   info('共 '+cases.length+' 条用例，失败 '+failed.length+' 条');
 })();
+</script>
+<div id="lb"><img alt=""><div class="hint">点击任意位置关闭</div></div>
+<script>
+(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
+document.addEventListener('click',function(e){var t=e.target;
+ if(t.tagName==='IMG'&&t.src&&t.src.indexOf('data:image')===0){im.src=t.src;lb.classList.add('on');e.preventDefault();return;}
+ if(t===lb||t===im){lb.classList.remove('on');im.removeAttribute('src');}});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('on');});})();
 </script>
 </body></html>

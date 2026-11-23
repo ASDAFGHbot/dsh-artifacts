@@ -342,12 +342,12 @@
       "title": "laputa-home 分区视觉回归总结（DeepSeek v4.1）",
       "kind": "html",
       "createdAt": "2026-11-20T03:31:33.414Z",
-      "updatedAt": "2026-11-20T06:35:28.286Z",
-      "rev": 3,
+      "updatedAt": "2026-11-23T06:22:46.161Z",
+      "rev": 4,
       "files": [
         "index.html"
       ],
-      "description": "laputa-home 分区视觉回归总结（DeepSeek v4.1 轮）：结果、断言明细与截图、跳转校验、两轮对照；顶部提供「全部展开 / 全部收起 / 展开失败」"
+      "description": "laputa-home 分区视觉回归总结（DeepSeek v4.1 轮）：结果、断言明细与截图（点击放大）、跳转校验、两轮对照、在线回放、工具栏三按钮"
     },
     "laputa-home-dingdao-report": {
       "id": "laputa-home-dingdao-report",
