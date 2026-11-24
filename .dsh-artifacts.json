@@ -445,6 +445,18 @@
       ],
       "description": "首页精选用例 Midscene 执行报告（qwen3.8-flash，登录态 mid 14135892）：19 条（执行 18、未执行 1 注明原因）、断言明细与截图（点击放大）、18 条在线回放、单一工具栏"
     },
+    "laputa-home-jingxuan-summary": {
+      "id": "laputa-home-jingxuan-summary",
+      "title": "首页精选用例视觉回归总结（qwen3.8-flash）",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:31:01.772Z",
+      "updatedAt": "2026-11-24T07:31:01.772Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "首页精选用例视觉回归总结（qwen3.8-flash）：执行 18 条结果 + 未执行 1 条、失败归类与证据、断言明细与截图（点击放大）、访问轨迹、18 条在线回放、工具栏三按钮"
+    },
     "laputa-home-midscene-ozqiob": {
       "id": "laputa-home-midscene-ozqiob",
       "title": "laputa-home 分区 Midscene 执行报告",
