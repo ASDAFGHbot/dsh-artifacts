@@ -810,6 +810,18 @@
       ],
       "description": "HOME-01 回放（第二轮，qwen3.8-flash）"
     },
+    "sy2-replay-tc003": {
+      "id": "sy2-replay-tc003",
+      "title": "首页第二轮 TC-003 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T09:55:08.870Z",
+      "updatedAt": "2026-11-24T09:55:08.870Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-03 回放（第二轮，含搜索历史造数）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
