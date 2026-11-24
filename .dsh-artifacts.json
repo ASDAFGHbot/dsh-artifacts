@@ -942,6 +942,18 @@
       ],
       "description": "HOME-13 回放（第二轮）"
     },
+    "sy2-replay-tc014": {
+      "id": "sy2-replay-tc014",
+      "title": "首页第二轮 TC-014 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T09:57:11.416Z",
+      "updatedAt": "2026-11-24T09:57:11.416Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-14 回放（第二轮，登录态）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
