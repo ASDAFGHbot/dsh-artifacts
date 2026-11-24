@@ -678,6 +678,18 @@
       ],
       "description": "HOME-11 未登录功能入口统一登录门禁 回放（guest 未登录）"
     },
+    "sy-replay-tc012": {
+      "id": "sy-replay-tc012",
+      "title": "首页 TC-012 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:29:20.260Z",
+      "updatedAt": "2026-11-24T07:29:20.260Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-12 频道栏、吸顶导航与目标页分流 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
