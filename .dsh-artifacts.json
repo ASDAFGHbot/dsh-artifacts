@@ -618,6 +618,18 @@
       ],
       "description": "HOME-06 头像账户面板与本人空间跳转 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc007": {
+      "id": "sy-replay-tc007",
+      "title": "首页 TC-007 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:28:25.615Z",
+      "updatedAt": "2026-11-24T07:28:25.615Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-07 消息浮层分类与跳转 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
