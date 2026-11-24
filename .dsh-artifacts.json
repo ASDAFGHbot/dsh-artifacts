@@ -654,6 +654,18 @@
       ],
       "description": "HOME-09 收藏浮层双列滚动、Tab 与内容跳转 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc010": {
+      "id": "sy-replay-tc010",
+      "title": "首页 TC-010 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:29:01.961Z",
+      "updatedAt": "2026-11-24T07:29:01.961Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-10 历史浮层三类内容与续播 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
