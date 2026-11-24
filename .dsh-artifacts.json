@@ -558,6 +558,18 @@
       ],
       "description": "laputa-home 推荐视频流章视觉回归总结（qwen3.8-flash，登录态）：执行 9 条结果 + 未执行 2 条、悬停/换一换实测证据、断言明细与截图（点击放大）、访问轨迹、9 条在线回放、工具栏三按钮"
     },
+    "sy-replay-tc001": {
+      "id": "sy-replay-tc001",
+      "title": "首页 TC-001 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:27:36.901Z",
+      "updatedAt": "2026-11-24T07:27:36.901Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-01 首屏骨架与内容层级 回放（qwen3.8-flash，mid 14135892）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
