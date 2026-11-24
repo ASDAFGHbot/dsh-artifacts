@@ -750,6 +750,18 @@
       ],
       "description": "HOME-17 视频卡悬停预览与稍后再看 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc018": {
+      "id": "sy-replay-tc018",
+      "title": "首页 TC-018 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:30:25.256Z",
+      "updatedAt": "2026-11-24T07:30:25.256Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-18 楼层品类卡展示与跳转 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
