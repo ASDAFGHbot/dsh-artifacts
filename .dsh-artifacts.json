@@ -702,6 +702,18 @@
       ],
       "description": "HOME-13 Banner 轮播展示与切换跳转 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc014": {
+      "id": "sy-replay-tc014",
+      "title": "首页 TC-014 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:29:45.163Z",
+      "updatedAt": "2026-11-24T07:29:45.163Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-14 推荐流换一换（登录态）回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
