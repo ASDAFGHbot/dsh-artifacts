@@ -882,6 +882,18 @@
       ],
       "description": "HOME-08 回放（第二轮）"
     },
+    "sy2-replay-tc009": {
+      "id": "sy2-replay-tc009",
+      "title": "首页第二轮 TC-009 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T09:56:15.173Z",
+      "updatedAt": "2026-11-24T09:56:15.173Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-09 回放（第二轮）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
