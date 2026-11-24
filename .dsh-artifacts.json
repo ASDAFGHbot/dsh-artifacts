@@ -582,6 +582,18 @@
       ],
       "description": "HOME-03 搜索框聚焦、历史与热搜面板 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc004": {
+      "id": "sy-replay-tc004",
+      "title": "首页 TC-004 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:27:55.888Z",
+      "updatedAt": "2026-11-24T07:27:55.888Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-04 搜索联想、键盘选择与提交 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
