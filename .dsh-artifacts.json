@@ -798,6 +798,18 @@
       ],
       "description": "HOME-14 推荐流换一换（未登录态）回放（guest）"
     },
+    "sy2-replay-tc001": {
+      "id": "sy2-replay-tc001",
+      "title": "首页第二轮 TC-001 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T09:54:57.279Z",
+      "updatedAt": "2026-11-24T09:54:57.279Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-01 回放（第二轮，qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
