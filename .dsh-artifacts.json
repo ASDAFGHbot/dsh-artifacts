@@ -690,6 +690,18 @@
       ],
       "description": "HOME-12 频道栏、吸顶导航与目标页分流 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc013": {
+      "id": "sy-replay-tc013",
+      "title": "首页 TC-013 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:29:29.976Z",
+      "updatedAt": "2026-11-24T07:29:29.976Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-13 Banner 轮播展示与切换跳转 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
