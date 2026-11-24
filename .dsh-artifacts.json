@@ -726,6 +726,18 @@
       ],
       "description": "HOME-15 推荐视频卡字段与双跳转 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc016": {
+      "id": "sy-replay-tc016",
+      "title": "首页 TC-016 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:30:05.271Z",
+      "updatedAt": "2026-11-24T07:30:05.271Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-16 无限 Feed 持续追加 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
