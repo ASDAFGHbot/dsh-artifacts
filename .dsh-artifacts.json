@@ -594,6 +594,18 @@
       ],
       "description": "HOME-04 搜索联想、键盘选择与提交 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc005": {
+      "id": "sy-replay-tc005",
+      "title": "首页 TC-005 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:28:05.969Z",
+      "updatedAt": "2026-11-24T07:28:05.969Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-05 已登录右侧功能区展示与悬停反馈 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
