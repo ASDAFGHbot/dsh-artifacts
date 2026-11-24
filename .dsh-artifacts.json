@@ -762,6 +762,18 @@
       ],
       "description": "HOME-18 楼层品类卡展示与跳转 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc019": {
+      "id": "sy-replay-tc019",
+      "title": "首页 TC-019 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:30:35.427Z",
+      "updatedAt": "2026-11-24T07:30:35.427Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-14 推荐流换一换（未登录态）回放（guest）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
