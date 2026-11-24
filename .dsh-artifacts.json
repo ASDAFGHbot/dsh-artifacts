@@ -570,6 +570,18 @@
       ],
       "description": "HOME-01 首屏骨架与内容层级 回放（qwen3.8-flash，mid 14135892）"
     },
+    "sy-replay-tc003": {
+      "id": "sy-replay-tc003",
+      "title": "首页 TC-003 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:27:46.433Z",
+      "updatedAt": "2026-11-24T07:27:46.433Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-03 搜索框聚焦、历史与热搜面板 回放（qwen3.8-flash）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
