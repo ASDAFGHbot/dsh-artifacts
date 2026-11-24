@@ -433,6 +433,18 @@
       ],
       "description": "laputa-home 分区（DeepSeek v4.1 轮）TC-102 完整回放：逐步截图、定位过程、模型输出"
     },
+    "laputa-home-jingxuan-report": {
+      "id": "laputa-home-jingxuan-report",
+      "title": "首页精选用例执行报告（qwen3.8-flash）",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:30:49.679Z",
+      "updatedAt": "2026-11-24T07:30:49.679Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "首页精选用例 Midscene 执行报告（qwen3.8-flash，登录态 mid 14135892）：19 条（执行 18、未执行 1 注明原因）、断言明细与截图（点击放大）、18 条在线回放、单一工具栏"
+    },
     "laputa-home-midscene-ozqiob": {
       "id": "laputa-home-midscene-ozqiob",
       "title": "laputa-home 分区 Midscene 执行报告",
