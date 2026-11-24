@@ -827,12 +827,12 @@
       "title": "首页第二轮 TC-004 回放",
       "kind": "html",
       "createdAt": "2026-11-24T09:55:19.744Z",
-      "updatedAt": "2026-11-24T09:55:19.744Z",
-      "rev": 1,
+      "updatedAt": "2026-11-24T12:11:15.056Z",
+      "rev": 2,
       "files": [
         "index.html"
       ],
-      "description": "HOME-04 回放（第二轮）"
+      "description": "HOME-04 回放（第二轮，补齐第 4 步：清除按钮 + 新词搜索 + 历史去重）"
     },
     "sy2-replay-tc005": {
       "id": "sy2-replay-tc005",
