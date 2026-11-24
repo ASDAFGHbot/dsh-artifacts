@@ -450,12 +450,12 @@
       "title": "首页精选用例视觉回归总结（第二轮 · qwen3.8-flash）",
       "kind": "html",
       "createdAt": "2026-11-24T07:31:01.772Z",
-      "updatedAt": "2026-11-24T09:58:28.214Z",
-      "rev": 2,
+      "updatedAt": "2026-11-24T12:11:40.878Z",
+      "rev": 3,
       "files": [
         "index.html"
       ],
-      "description": "首页精选用例视觉回归总结 第二轮（qwen3.8-flash）：15/18 通过、3 条失败（登录门禁、悬停预览、未登录换一换）、HOME-03 造数后转为通过、断言明细与截图、18 条第二轮在线回放"
+      "description": "首页精选用例视觉回归总结 第二轮（qwen3.8-flash）：15/18 通过、3 条真实失败、HOME-04 补齐提交与清除步骤并转通过、断言明細与截图、18 条在线回放"
     },
     "laputa-home-midscene-ozqiob": {
       "id": "laputa-home-midscene-ozqiob",
