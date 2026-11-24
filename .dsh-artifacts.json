@@ -438,12 +438,12 @@
       "title": "首页精选用例执行报告（第二轮 · qwen3.8-flash）",
       "kind": "html",
       "createdAt": "2026-11-24T07:30:49.679Z",
-      "updatedAt": "2026-11-24T09:58:16.480Z",
-      "rev": 2,
+      "updatedAt": "2026-11-24T12:11:28.037Z",
+      "rev": 3,
       "files": [
         "index.html"
       ],
-      "description": "首页精选用例执行报告 第二轮（qwen3.8-flash，mid 14135892）：19 条（执行 18、未执行 1 注明原因）、15 通过 3 失败、断言 50/53、18 条在线回放、单一工具栏"
+      "description": "首页精选用例执行报告 第二轮（qwen3.8-flash）：19 条（执行 18、未执行 1）、15 通过 3 失败、断言 53/56、TC-004 已补齐 4 步、18 条在线回放"
     },
     "laputa-home-jingxuan-summary": {
       "id": "laputa-home-jingxuan-summary",
