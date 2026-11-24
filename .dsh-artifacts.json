@@ -666,6 +666,18 @@
       ],
       "description": "HOME-10 历史浮层三类内容与续播 回放（qwen3.8-flash）"
     },
+    "sy-replay-tc011": {
+      "id": "sy-replay-tc011",
+      "title": "首页 TC-011 回放",
+      "kind": "html",
+      "createdAt": "2026-11-24T07:29:11.088Z",
+      "updatedAt": "2026-11-24T07:29:11.088Z",
+      "rev": 1,
+      "files": [
+        "index.html"
+      ],
+      "description": "HOME-11 未登录功能入口统一登录门禁 回放（guest 未登录）"
+    },
     "tj-replay-tc001": {
       "id": "tj-replay-tc001",
       "title": "推荐流 TC-001 回放",
